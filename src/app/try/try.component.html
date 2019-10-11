@@ -1,0 +1,32 @@
+<p>Name</p>
+<input for ="Name" id = "name" type="text" [(ngModel)] = "sho.name" name = "name">
+<p>Surname</p>
+<input for ="Surame" id = "surname" type="text" [(ngModel)] = "sho.surname" name = "surname" >
+<p>Position</p>
+<input for ="Position" id = "position" type="text" [(ngModel)] = "sho.position" name = "position" >
+<p>Organization</p>
+<input for ="Organization" id = "Organization" type="text" [(ngModel)] = "sho.Organization" name = "Organization" >
+
+<button type = "submit" (click) = "addemp()">SAVE</button>
+
+
+
+<table >
+    <tbody>
+<th>Name</th>
+<th>Surname</th>
+<th>Position</th>
+<th>Organization</th>
+<tr *ngFor = "let ward of employees; let x = index" >
+<td>{{ward.name}} </td> 
+ <td>{{ward.surname}} </td>
+ <td>{{ward.position}}</td>
+ <td>{{ward.Organization}} </td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+
